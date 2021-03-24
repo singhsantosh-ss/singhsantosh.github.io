@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
-import { MaterialModule } from './material-module';
-// import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-// import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatAutocompleteModule, MatButtonModule, MatCheckboxModule, MatDatepickerModule, 
+MatFormFieldModule, MatInputModule, MatRadioModule, MatSelectModule, MatSliderModule, 
+  MatSlideToggleModule
+} from '@angular/material'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,10 +17,19 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule,
-    // FormsModule,
-    // ReactiveFormsModule,
-    // BrowserAnimationsModule
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
