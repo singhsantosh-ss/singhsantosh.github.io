@@ -1,1 +1,187 @@
 /* You can add global styles to this file, and also import other style files */
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.table {
+  display: table;
+}
+.row {
+  display: table-row;
+}
+.cell {
+  display: table-cell;
+  border: 1px solid #000;
+}
+.colspan2 {
+  /* What to do here? */
+  display: table-caption;
+}
+
+.example-card {
+  max-width: 100px;
+}
+
+.textCenter {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.header-image {
+  background-image: url('./assets/images/santoshsingh.jpeg');
+  background-size: cover;
+  shape-image-threshold: initial;
+}
+.header-connect-image{
+    background-image: url('./assets/images/connect.png');
+    background-size: cover;
+    shape-image-threshold: initial;
+}
+.header-experince-image {
+    background-image: url('./assets/images/experince.png');
+    background-size: cover;
+    shape-image-threshold: initial;
+}
+.nodejs{
+    background-image: url('./assets/images/Nodejs.png');
+    background-size: cover;
+    /* shape-image-threshold: initial; */
+}
+.aws{
+    background-image: url('./assets/images/AWS.png');
+    background-size: cover;
+    /* shape-image-threshold: initial; */
+}
+.postgresql{
+    background-image: url('./assets/images/postgresql.png');
+    background-size: cover;
+    /* shape-image-threshold: initial; */
+}
+.redis{
+    background-image: url('./assets/images/redis.png');
+    background-size: cover;
+    /* shape-image-threshold: initial; */
+}
+.github{
+    background-image: url('./assets/images/github.png');
+    background-size: cover;
+    /* shape-image-threshold: initial; */
+}
+.card-wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-left:auto;
+    margin-right:auto;  
+    vertical-align:middle;
+}
+
+.subcard-wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.profileCard {
+  width: 400px;
+  margin: 0 auto;
+  background-color: whitesmoke
+}
+
+.submat-card {
+  width: 380px;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.intro {
+    text-align: center;
+  }
+
+.submat-via-card {
+  width: 380px;
+  margin: 0 auto;
+  background-color: #e1e1d0;
+  margin-top: 4px;
+  text-align: center;
+}
+.gmail-image {
+  background-image: url('./assets/images/gmail.png');
+  background-size: cover;
+  shape-image-threshold: initial;
+  margin-left: 140px;
+}
+.github-image {
+  background-image: url('./assets/images/github.png');
+  background-size: cover;
+  shape-image-threshold: initial;
+  margin-left: 140px;
+}
+.linkedin-image{
+  background-image: url('./assets/images/linkedIn.png');
+  background-size: cover;
+  shape-image-threshold: initial;
+  margin-left: 140px;
+}
+.twitter-image{
+  background-image: url('./assets/images/twitter.png');
+  background-size: cover;
+  shape-image-threshold: initial;
+  margin-left: 140px;
+}
+.skype-image{
+  background-image: url('./assets/images/skype.png');
+  background-size: cover;
+  shape-image-threshold: initial;
+  margin-left: 140px;
+}
+
+.matCenter{
+    align-items: center;
+}
+
+.submat-gmail-card {
+  width: 380px;
+  margin: 0 auto;
+  background-color: #4285F4;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.submat-github-card {
+  width: 380px;
+  margin: 0 auto;
+  background-color: lightslategrey;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.submat-linkedin-card {
+  width: 380px;
+  margin: 0 auto;
+  background-color : #0e76a8;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.submat-twitter-card {
+  width: 380px;
+  margin: 0 auto;
+  background-color : #1DA1F2;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.submat-skype-card {
+  width: 380px;
+  margin: 0 auto;
+  background-color : #00aff0;
+  margin-top: 4px;
+  text-align: center;
+}

@@ -7,10 +7,11 @@ MatFormFieldModule, MatInputModule, MatRadioModule, MatSelectModule, MatSliderMo
   MatSlideToggleModule, MatBadgeModule, MatBottomSheetModule, MatButtonToggleModule, MatCardModule, MatChipsModule,
     MatStepperModule, MatDialogModule, MatDividerModule, MatExpansionModule, MatGridListModule, MatIconModule,
     MatListModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule,MatProgressBarModule,
+
   MatProgressSpinnerModule, MatRippleModule, MatSidenavModule, MatSnackBarModule, MatSortModule,
   MatTableModule, MatTabsModule, MatToolbarModule, MatTooltipModule, MatTreeModule, MatCommonModule
 } from '@angular/material'
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { PortalModule } from '@angular/cdk/portal';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {ScrollingModule} from '@angular/cdk/scrolling';
@@ -21,11 +22,20 @@ import {CdkTreeModule} from '@angular/cdk/tree';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ConnectViaComponent } from './connect-via/connect-via.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ConnectViaComponent,
+    WorkExperienceComponent
+  ],
+  entryComponents: [
+    AboutMeComponent,
+    ConnectViaComponent,
+    WorkExperienceComponent
   ],
   imports: [
     BrowserModule,
@@ -77,9 +87,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     PortalModule,
     ScrollingModule,
   ],
-  entryComponents: [
-    AboutMeComponent,
-  ],
+ 
   exports: [ AboutMeComponent ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

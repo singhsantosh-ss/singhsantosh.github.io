@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import {MatDialog} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ConnectViaComponent } from './connect-via/connect-via.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,14 +15,19 @@ export class AppComponent {
   constructor(public dialog: MatDialog
     ) {}
 
-  openDialog() {
-    this.dialog.open(AppComponent);
+  openDialogAboutMe() {
+    this.dialog.open(AboutMeComponent);
   }
-}
 
-@Component({
-  selector: 'app-about-me',
-  templateUrl: './about-me/about-me.component.html',
-  styleUrls: ['./about-me/about-me.component.css']
-})
-export class AboutMeComponent {}
+  openDialogConnectVia() {
+    this.dialog.open(ConnectViaComponent, {
+      // height: '400px',
+      // width: '600px',
+    });
+  }
+
+  openDialogworkExperience() {
+    this.dialog.open(WorkExperienceComponent);
+  }
+
+}
