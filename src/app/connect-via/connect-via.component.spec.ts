@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ConnectViaComponent } from './connect-via.component';
 
@@ -6,7 +6,7 @@ describe('ConnectViaComponent', () => {
   let component: ConnectViaComponent;
   let fixture: ComponentFixture<ConnectViaComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ConnectViaComponent ]
     })
