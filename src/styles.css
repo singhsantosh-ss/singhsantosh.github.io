@@ -2,12 +2,15 @@
   p {
   font-family: "Times New Roman", Times, serif;
   }
-
+  .textLft{
+    text-align: left;
+    margin-left: 30px;
+  }
   .textCenter {
     text-align: center;
     margin-top: 15px;
   }
-
+  
   .header-image {
     background-image: url('./assets/images/santoshsingh.jpeg');
     background-size: cover;
@@ -85,6 +88,13 @@
       background-size: cover;
       shape-image-threshold: initial;
   }
+  .fullnodejs{
+      background-image: url('./assets/images/iconfinder_nodejs-light_1012820.png');
+      background-size: cover;
+      shape-image-threshold: initial;
+      background-position: center;
+  }
+
   .card-wrapper {
       display: flex;
       height: 100%;
