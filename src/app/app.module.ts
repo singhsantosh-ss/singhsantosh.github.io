@@ -26,18 +26,27 @@ import { ConnectViaComponent } from './connect-via/connect-via.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import { ProjectsComponent } from './projects/projects.component';
+import { EducationComponent } from './education/education.component';
+import { TechnicalSkillsComponent } from './technical-skills/technical-skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
     ConnectViaComponent,
-    WorkExperienceComponent
+    WorkExperienceComponent,
+    ProjectsComponent,
+    EducationComponent,
+    TechnicalSkillsComponent
   ],
   entryComponents: [
     AboutMeComponent,
     ConnectViaComponent,
-    WorkExperienceComponent
+    WorkExperienceComponent,
+    ProjectsComponent,
+    EducationComponent,
+    TechnicalSkillsComponent
   ],
   imports: [
     BrowserModule,

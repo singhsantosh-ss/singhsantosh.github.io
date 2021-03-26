@@ -2,16 +2,19 @@
     <mat-card class="profileCard">
       <mat-card-header>
         <div mat-card-avatar class="header-image"></div>
-        <mat-card-title>Santosh Singh (Software Engineer)</mat-card-title>
+        <mat-card-title class="textCenter">Santosh Singh (Software Engineer)</mat-card-title>
       </mat-card-header>
 
       <mat-card-actions>
         <mat-card class="submat-card">
           <mat-card-title><P>The first thing I maintain while working is loyalty and honesty, I would take jobs that I can do, otherwise not, and I am always straightforward.</P></mat-card-title>
         </mat-card>
-        
-        <mat-card class="submat-via-card">
-          <mat-card-title>Connect Via Platforms</mat-card-title>
+
+        <mat-card class="submat-connect-card" (click)="openDialogConnectVia()">
+            <mat-card-header class="matCenter">
+                <div mat-card-avatar class="header-connect-image-on-profile"></div>
+                <mat-card-title class="textCenter">Connect Via Platforms</mat-card-title>
+            </mat-card-header>
         </mat-card>
       </mat-card-actions>
     </mat-card>

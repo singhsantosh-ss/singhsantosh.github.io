@@ -4,8 +4,8 @@
   }
 
   .textCenter {
-      text-align: center;
-      margin-top: 15px;
+    text-align: center;
+    margin-top: 15px;
   }
 
   .header-image {
@@ -23,30 +23,67 @@
       background-size: cover;
       shape-image-threshold: initial;
   }
+  .header-project-image {
+      background-image: url('./assets/images/projects.png');
+      background-size: cover;
+      shape-image-threshold: initial;
+  }
+  .header-education-image {
+      background-image: url('./assets/images/education.png');
+      background-size: cover;
+      shape-image-threshold: initial;
+  }
+  .header-technical-image {
+      background-image: url('./assets/images/technicalSkills.png');
+      background-size: cover;
+      shape-image-threshold: initial;
+  }
+  .header-connect-image-on-profile{
+      background-image: url('./assets/images/connect.png');
+      background-size: cover;
+      shape-image-threshold: initial;
+      margin-left: 80px;
+  }
   .nodejs{
       background-image: url('./assets/images/Nodejs.png');
       background-size: cover;
-      /* shape-image-threshold: initial; */
+      shape-image-threshold: initial;
+      background-position: center;
   }
   .aws{
       background-image: url('./assets/images/AWS.png');
       background-size: cover;
-      /* shape-image-threshold: initial; */
+      shape-image-threshold: initial;
   }
   .postgresql{
       background-image: url('./assets/images/postgresql.png');
       background-size: cover;
-      /* shape-image-threshold: initial; */
+      shape-image-threshold: initial;
   }
   .redis{
       background-image: url('./assets/images/redis.png');
       background-size: cover;
-      /* shape-image-threshold: initial; */
+      shape-image-threshold: initial;
   }
   .github{
       background-image: url('./assets/images/github.png');
       background-size: cover;
-      /* shape-image-threshold: initial; */
+      shape-image-threshold: initial;
+  }
+  .mongoDB{
+      background-image: url('./assets/images/mongoDB.png');
+      background-size: cover;
+      shape-image-threshold: initial;
+  }
+  .php{
+      background-image: url('./assets/images/PHP.png');
+      background-size: cover;
+      shape-image-threshold: initial;
+  }
+  .mysql{
+      background-image: url('./assets/images/mySql.png');
+      background-size: cover;
+      shape-image-threshold: initial;
   }
   .card-wrapper {
       display: flex;
@@ -88,7 +125,7 @@
   .submat-via-card {
     width: 380px;
     margin: 0 auto;
-    background-color: #e1e1d0;
+    background-color:#d6d6c2;
     margin-top: 4px;
     text-align: center;
   }
@@ -119,14 +156,21 @@
   .skype-image{
     background-image: url('./assets/images/skype.png');
     background-size: cover;
+
     shape-image-threshold: initial;
     margin-left: 140px;
   }
-
-  .matCenter{
+  .matCenter {
       align-items: center;
   }
 
+  .submat-connect-card {
+    width: 380px;
+    margin: 0 auto;
+    background-color: #adad85;
+    margin-top: 4px;
+    text-align: center;
+  }
   .submat-gmail-card {
     width: 380px;
     margin: 0 auto;

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { ConnectViaComponent } from '../connect-via/connect-via.component';
 
 @Component({
   selector: 'app-about-me',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
+  }
+
+  openDialogConnectVia() {
+    this.dialog.closeAll();
+    this.dialog.open(ConnectViaComponent, {
+      disableClose: true,
+      panelClass : "card-wrapper"
+    });
   }
 
 }
