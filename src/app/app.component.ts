@@ -13,7 +13,7 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'singhsantosh.github.io';
 
   constructor(public dialog: MatDialog
     ) {}
