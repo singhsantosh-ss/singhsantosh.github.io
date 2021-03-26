@@ -24,6 +24,8 @@ import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ConnectViaComponent } from './connect-via/connect-via.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
 @NgModule({
   declarations: [
@@ -86,11 +88,16 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
     MatTreeModule,
     PortalModule,
     ScrollingModule,
+    FlexLayoutModule
   ],
  
   exports: [ AboutMeComponent ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
+
+platformBrowserDynamic().bootstrapModule(AppModule);

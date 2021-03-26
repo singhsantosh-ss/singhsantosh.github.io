@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog , MatDialogConfig} from '@angular/material/dialog';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ConnectViaComponent } from './connect-via/connect-via.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
@@ -16,18 +16,24 @@ export class AppComponent {
     ) {}
 
   openDialogAboutMe() {
-    this.dialog.open(AboutMeComponent);
+    this.dialog.open(AboutMeComponent, {
+      disableClose: true,
+      panelClass: "card-wrapper",
+    });
   }
 
   openDialogConnectVia() {
     this.dialog.open(ConnectViaComponent, {
-      // height: '400px',
-      // width: '600px',
+      disableClose: true,
+      panelClass : "card-wrapper"
     });
   }
 
   openDialogworkExperience() {
-    this.dialog.open(WorkExperienceComponent);
+    this.dialog.open(WorkExperienceComponent, {
+      disableClose: true,
+      panelClass : "card-wrapper"
+    });
   }
 
 }
