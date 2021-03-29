@@ -1,51 +1,44 @@
 <div class="card-wrapper">
     <mat-card class="profileCard">
-      <mat-card-header>
-        <div mat-card-avatar class="header-image"></div>
-        <mat-card-title>Santosh Singh (Software Engineer)</mat-card-title>
-        <mat-card-subtitle><P>E-mail-: singhsantosh.edu.in@gmail.com<br>Phone-: +91-9429929149</P></mat-card-subtitle>
-      </mat-card-header>
+      <div class="col-lg-12 col-md-6 col-sm-6">
+          <div class="card card-stats">
+              <div class="card-header card-header-info card-header-icon">
+                  <div class="card-icon">
+                    <div mat-card-avatar class="header-image"></div>
+                  </div>
+                    <P class="card-category textLft">Santosh Singh (Software Engineer)</P>
+                    <P class="card-category textLft">Phone -: +91-9429929149</P>
+              </div>
+              <div class="card-footer"></div>
+                <div class="col-md-12">
+                    <button mat-raised-button class="btn btn-info btn-block" (click)="openDialogAboutMe()">about me</button>
+                </div>
+                <br>
 
-      <div class="row">
-        <div class="col-md-12">
-            <button mat-raised-button class="btn btn-info btn-block" (click)="openDialogAboutMe()">about me</button>
-        </div>
-      </div><br>
+                <div class="col-md-12">
+                    <button mat-raised-button class="btn btn-info btn-block" (click)="openDialogConnectVia()">Connect Via</button>
+              </div><br>
 
-      <div class="row">
-        <div class="col-md-12">
-            <button mat-raised-button class="btn btn-info btn-block" (click)="openDialogConnectVia()">Connect Via</button>
-        </div>
-      </div><br>
+                <div class="col-md-12">
+                    <button mat-raised-button class="btn btn-info btn-block" (click)="openDialogworkExperience()">WORK EXPERIENCE</button>
+              </div><br>
 
-      <div class="row">
-        <div class="col-md-12">
-            <button mat-raised-button class="btn btn-info btn-block" (click)="openDialogworkExperience()">WORK EXPERIENCE</button>
-        </div>
-      </div><br>
+              <div class="col-md-12">
+                  <button mat-raised-button class="btn btn-info btn-block" (click)="openDialogworkProjects()">POJECTS</button>
+              </div><br>
 
-      <div class="row">
-        <div class="col-md-12">
-          <button mat-raised-button class="btn btn-info btn-block" (click)="openDialogworkProjects()">POJECTS</button>
-        </div>
-      </div><br>
+              <div class="col-md-12">
+                    <button mat-raised-button class="btn btn-info btn-block" (click)="openDialogworkEducation()">EDUCATION</button>
+              </div><br>
 
-      <div class="row">
-        <div class="col-md-12">
-            <button mat-raised-button class="btn btn-info btn-block" (click)="openDialogworkEducation()">EDUCATION</button>
-        </div>
-      </div><br>
+              <div class="col-md-12">
+                    <button mat-raised-button class="btn btn-info btn-block" (click)="openDialogworkTechnicalSkills()">TECHNICAL SKILLS</button>
+              </div><br>
 
-      <div class="row">
-        <div class="col-md-12">
-            <button mat-raised-button class="btn btn-info btn-block" (click)="openDialogworkTechnicalSkills()">TECHNICAL SKILLS</button>
-        </div>
-      </div><br>
-
-      <div class="row">
-        <div class="col-md-12">
-            <button mat-raised-button class="btn btn-info btn-block" >OTHERS</button>
-        </div>
+              <div class="col-md-12">
+                    <button mat-raised-button class="btn btn-info btn-block" >OTHERS</button>
+              </div> <br>
+          </div>
       </div>
     </mat-card>
 </div>

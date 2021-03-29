@@ -15454,6 +15454,10 @@ Copyright (c) 2015 Daniel Eden
 p {
   font-family: "Times New Roman", Times, serif;
   }
+  /* .cardMargin{
+    text-align: left;
+    margin-left: 30px;
+  } */
   .textLft{
     text-align: left;
     margin-left: 30px;
@@ -15504,13 +15508,12 @@ p {
       background-size: cover;
       shape-image-threshold: initial;
       align-items: center;
-      margin-left: 120px;
+      /* margin-left: 120px; */
   }
   .nodejs{
       background-image: url('./assets/images/Nodejs.png');
       background-size: cover;
       shape-image-threshold: initial;
-      background-position: center;
   }
   .aws{
       background-image: url('./assets/images/AWS.png');
@@ -15633,7 +15636,7 @@ p {
     background-image: url('./assets/images/education-icon.jpg');
     background-size: cover;
     shape-image-threshold: initial;
-    margin-left: 110px;
+    /* margin-left: 110px; */
   }
   .matCenter {
       align-items: center;
