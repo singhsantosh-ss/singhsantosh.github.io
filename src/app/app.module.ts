@@ -29,6 +29,7 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import { ProjectsComponent } from './projects/projects.component';
 import { EducationComponent } from './education/education.component';
 import { TechnicalSkillsComponent } from './technical-skills/technical-skills.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { TechnicalSkillsComponent } from './technical-skills/technical-skills.co
     WorkExperienceComponent,
     ProjectsComponent,
     EducationComponent,
-    TechnicalSkillsComponent
+    TechnicalSkillsComponent,
+    HomeComponent
   ],
   entryComponents: [
     AboutMeComponent,
