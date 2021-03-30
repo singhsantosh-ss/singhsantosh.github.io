@@ -6,7 +6,6 @@ import { EducationComponent } from './education/education.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TechnicalSkillsComponent } from './technical-skills/technical-skills.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
