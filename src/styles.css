@@ -18,6 +18,8 @@
 
  */
 /*     brand Colors              */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 .card {
   font-size: .875rem; }
 

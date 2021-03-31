@@ -22,51 +22,32 @@ export class HomeComponent implements OnInit {
 
   openDialogAboutMe() {
     this.dialog.closeAll();
-    this.dialog.open(AboutMeComponent, {
-      disableClose: true,
-      panelClass: "card-wrapper",
-    });
+    this.dialog.open(AboutMeComponent);
   }
-
 
   openDialogConnectVia() {
     this.dialog.closeAll();
-    this.dialog.open(ConnectViaComponent, {
-      disableClose: true,
-      panelClass : "card-wrapper"
-    });
+    this.dialog.open(ConnectViaComponent);
   }
 
   openDialogworkExperience() {
     this.dialog.closeAll();
-    this.dialog.open(WorkExperienceComponent, {
-      disableClose: true,
-      panelClass : "card-wrapper"
-    });
+    this.dialog.open(WorkExperienceComponent);
   }
 
   openDialogworkProjects() {
     this.dialog.closeAll();
-    this.dialog.open(ProjectsComponent, {
-      disableClose: true,
-      panelClass : "card-wrapper"
-    });
+    this.dialog.open(ProjectsComponent);
   }
 
   openDialogworkEducation() {
     this.dialog.closeAll();
-    this.dialog.open(EducationComponent, {
-      disableClose: true,
-      panelClass : "card-wrapper"
-    });
+    this.dialog.open(EducationComponent);
   }
 
   openDialogworkTechnicalSkills() {
     this.dialog.closeAll();
-    this.dialog.open(TechnicalSkillsComponent, {
-      disableClose: true,
-      panelClass : "card-wrapper"
-    });
+    this.dialog.open(TechnicalSkillsComponent);
   }
   
 }
