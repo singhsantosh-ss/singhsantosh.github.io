@@ -64,11 +64,13 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "singhsantosh.github.io:build"
+            "browserTarget": "singhsantosh.github.io:build",
+            "proxyConfig": "src/proxy.conf.json"
           },
           "configurations": {
             "production": {
-              "browserTarget": "singhsantosh.github.io:build:production"
+              "browserTarget": "singhsantosh.github.io:build:production",
+              "proxyConfig": "src/proxy.conf.json"
             }
           }
         },

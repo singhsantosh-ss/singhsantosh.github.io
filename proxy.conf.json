@@ -1,6 +1,7 @@
 {
-  "/api": {
-    "target": "https://kit.fontawesome.com/a076d05399.js",
-    "secure": false
-  }
+    "/api/*": {
+        "target": "https://kit.fontawesome.com/a076d05399.js",
+        "secure": false,
+        "logLevel": "prod"
+    }
 }
