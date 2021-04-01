@@ -13,6 +13,10 @@ export class ConnectViaComponent implements OnInit {
   ngOnInit() {
   }
 
+  onNavigateUpwork(){
+    window.open("https://www.upwork.com/freelancers/~014b21313f1f1b504f", "_blank");
+  }
+
   onNavigateGmail(){
     window.open("mailto:singhsantosh.edu.in@gmail.com", "_blank");
   }
