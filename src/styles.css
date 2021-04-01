@@ -15480,12 +15480,12 @@ p {
       shape-image-threshold: initial;
   }
   .header-experince-image {
-      background-image: url('./assets/images/experince.png');
+      background-image: url('./assets/images/work-experince.jpeg');
       background-size: cover;
       shape-image-threshold: initial;
   }
   .header-project-image {
-      background-image: url('./assets/images/projects.png');
+      background-image: url('./assets/images/PROJECTS.png');
       background-size: cover;
       shape-image-threshold: initial;
   }
