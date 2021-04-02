@@ -21,33 +21,16 @@ import {CdkTreeModule} from '@angular/cdk/tree';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { ConnectViaComponent } from './connect-via/connect-via.component';
-import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import { ProjectsComponent } from './projects/projects.component';
-import { EducationComponent } from './education/education.component';
-import { TechnicalSkillsComponent } from './technical-skills/technical-skills.component';
 import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AboutMeComponent,
-    ConnectViaComponent,
-    WorkExperienceComponent,
-    ProjectsComponent,
-    EducationComponent,
-    TechnicalSkillsComponent,
     HomeComponent
   ],
   entryComponents: [
-    AboutMeComponent,
-    ConnectViaComponent,
-    WorkExperienceComponent,
-    ProjectsComponent,
-    EducationComponent,
-    TechnicalSkillsComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -101,7 +84,7 @@ import { HomeComponent } from './home/home.component';
     FlexLayoutModule
   ],
  
-  exports: [ AboutMeComponent ],
+  exports: [ HomeComponent ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [

@@ -10,35 +10,469 @@
                     <P class="card-category textLft">Phone -: +91-9429929149</P>
               </div>
               <div class="card-footer"></div>
-                <div class="col-md-12">
-                    <button mat-raised-button class="btn btn-info btn-block" style="border-radius: 100px;" (click)="openDialogAboutMe()">about me</button>
-                </div>
-                <br>
 
-                <div class="col-md-12">
-                    <button mat-raised-button class="btn btn-info btn-block" style="border-radius: 100px;" (click)="openDialogConnectVia()">Connect Via</button>
-              </div><br>
+                <!-- About me start --> 
+                <mat-accordion>
+                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        <!-- about me -->
+                      </mat-panel-title>
+                      <mat-panel-description class="containbar">
+                        About Me
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                        <div class="col-lg-12 col-md-6 col-sm-6">
+                            <div class="card card-stats">
+                                <div class="card-header card-header-info card-header-icon">
+                                    <div class="card-icon">
+                                      <div mat-card-avatar class="header-image"></div>
+                                    </div>
+                                      <P class="card-category text">I'm Software Engineer with Bachelor's Degree in Computer Engineer From (G.T.U).</P>
+                                    </div>
+                                <div class="card-footer"></div>
+                            </div>
+                        </div>
+                  </mat-expansion-panel>
+                </mat-accordion>
+                <!-- <div class="card-footer"></div> -->
+                <!-- About me End -->
 
-                <div class="col-md-12">
-                    <button mat-raised-button class="btn btn-info btn-block" style="border-radius: 100px;" (click)="openDialogworkExperience()">WORK EXPERIENCE</button>
-              </div><br>
+                <!-- Connect Via start --> 
+                <mat-accordion>
+                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        <!-- about me -->
+                      </mat-panel-title>
+                      <mat-panel-description class="containbar">
+                        Connect Via
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="col-lg-12 col-md-6 col-sm-6" (click)="onNavigateGmail()">
+                        <div class="card card-stats">
+                            <div class="card-header card-header-info card-header-icon">
+                                <div class="card-icon">
+                                    <div mat-card-avatar class="email-image"></div>
+                                </div>
+                                <p class="card-category" style="font-weight: bold;">singhsantosh.edu.in@gmail.com</p>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+            
+                    <div class="col-lg-12 col-md-6 col-sm-6" (click)="onNavigateGitHub()">
+                        <div class="card card-stats">
+                            <div class="card-header card-header-info card-header-icon">
+                                <div class="card-icon">
+                                    <div mat-card-avatar class="Github-image"></div>
+                                </div>
+                                <p class="card-category" style="font-weight: bold;">singhsantosh-ss</p>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+            
+                    <div class="col-lg-12 col-md-6 col-sm-6" (click)="onNavigateLinkedIn()">
+                        <div class="card card-stats">
+                            <div class="card-header card-header-info card-header-icon">
+                                <div class="card-icon">
+                                    <div mat-card-avatar class="Linkedin-image"></div>
+                                </div>
+                                <p class="card-category" style="font-weight: bold;">LinkedIn</p>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+            
+                    <div class="col-lg-12 col-md-6 col-sm-6" (click)="onNavigateTwitter()">
+                        <div class="card card-stats">
+                            <div class="card-header card-header-info card-header-icon">
+                                <div class="card-icon">
+                                    <div mat-card-avatar class="Twitter-image"></div>
+                                </div>
+                                <p class="card-category" style="font-weight: bold;">@ssinghsantosh</p>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+            
+                    <div class="col-lg-12 col-md-6 col-sm-6" (click)="onNavigateSkype()">
+                        <div class="card card-stats">
+                            <div class="card-header card-header-info card-header-icon">
+                                <div class="card-icon">
+                                    <div mat-card-avatar class="Skype-image"></div>
+                                </div>
+                                <p class="card-category" style="font-weight: bold;">singhsantosh.edu.in</p>
+                            </div>
+                            <div class="card-footer"></div>
+                        </div>
+                    </div>
+                  </mat-expansion-panel>
+                </mat-accordion>
+                <!-- <div class="card-footer"></div> -->
+                <!-- Connect Via End-->
 
-              <div class="col-md-12">
-                  <button mat-raised-button class="btn btn-info btn-block" style="border-radius: 100px;" (click)="openDialogworkProjects()">POJECTS</button>
-              </div><br>
+                <!-- WORK EXPERIENCE start --> 
+                <mat-accordion>
+                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        <!-- about me -->
+                      </mat-panel-title>
+                      <mat-panel-description class="containbar">
+                        Work Experience
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                        <div class="col-md-12">
+                          <div class="card">
+                              <div class="card-header card-header-info">
+                                  <h4 class="card-title">Tamasha(GamePe Technologies Pvt. Ltd.)</h4>
+                                      <div class="col-md-12">
+                                          <button mat-raised-button class="btn btn-denger btn-block">11/2020 - Prasent</button>
+                                      </div>
+                              </div>
+                              <div class="card-body">
+                                  <p class="text">Here I'm working as senior backend Nodejs developer.</p><br>
+                
+                                        <div class="col-md-12">
+                                            <div class="card-header card-header-info card-header-icon" style="margin-left: 5px;">
+                                                <div class="card-icon">
+                                                    <i class="fab fa-github"></i>
+                                                    <i class='fab fa-aws'></i>
+                                                    <i class="fab fa-node"></i>
+                                                    <i class="fa fa-database" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <div class="card-footer"></div>
+                              </div>
+                
+                          </div>
+                      </div>
+                
+                      <div class="col-md-12">
+                          <div class="card">
+                              <div class="card-header card-header-info">
+                                  <h4 class="card-title">Io-market software services Pvt. Ltd.</h4>
+                                  <div class="col-md-12">
+                                      <button mat-raised-button class="btn btn-denger btn-block">10/2019 - 10/2020</button>
+                                  </div>
+                              </div>
+                              <div class="card-body">
+                                  <p class="text">There I was worked as junior backend Nodejs developer. In-depth knowledge of Node.Js, Nest.Js, Express.Js with PostgreSQL and MongoDB.
+                              I have knowledge of ES/6, JavaScript, TypeScript, Docker, Redis with RESTful api.</p><br>
+                                        <div class="col-md-12">
+                                            <div class="card-header card-header-info card-header-icon" style="margin-left: 5px;">
+                                                <div class="card-icon">
+                                                    <i class="fab fa-github"></i>
+                                                    <i class='fab fa-aws'></i>
+                                                    <i class="fab fa-node"></i>
+                                                    <i class="fa fa-database" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <div class="card-footer"></div>
+                              </div>
+                          </div>
+                      </div>
+                
+                      <div class="col-md-12">
+                          <div class="card">
+                              <div class="card-header card-header-info">
+                                  <h4 class="card-title">DOT Infotech</h4>
+                                  <div class="col-md-12">
+                                      <button mat-raised-button class="btn btn-denger btn-block">06/2018 - 08/2018</button>
+                                  </div>
+                              </div>
+                              <div class="card-body">
+                                  <p class="text">There I was worked as junior backend Nodejs developer & as php developer. working in Node.Js, Express.Js, and mongoDB in RESTful api with ES/6.</p><br>
+                                        <div class="col-md-12">
+                                            <div class="card-header card-header-info card-header-icon" style="margin-left: 5px;">
+                                                <div class="card-icon">
+                                                    <i class="fab fa-github"></i>
+                                                    <i class="fab fa-php"></i>
+                                                    <i class='fab fa-aws'></i>
+                                                    <i class="fab fa-node"></i>
+                                                    <i class="fa fa-database" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <div class="card-footer"></div>
+                              </div>
+                          </div>
+                      </div>
+                
+                      <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header card-header-info">
+                                <h4 class="card-title">Technorex Software</h4>
+                                  <div class="col-md-12">
+                                      <button mat-raised-button class="btn btn-denger btn-block">06/2018 - 08/2018</button>
+                                  </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text">There I was worked as Trainee junior backend php developer. Understanding the basic concept of OOPs and PHP. Learn MVC structure of PHP and MySQL database.</p><br>
+                                        <div class="col-md-12">
+                                            <div class="card-header card-header-info card-header-icon" style="margin-left: 5px;">
+                                                <div class="card-icon">
+                                                    <i class="fab fa-github"></i>
+                                                    <i class="fab fa-php"></i>
+                                                    <i class='fab fa-aws'></i>
+                                                    <i class="fa fa-database" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                <div class="card-footer"></div>
+                            </div>
+                          </div>
+                      </div>
+                      
+                  </mat-expansion-panel>
+                </mat-accordion>
+                <!-- <div class="card-footer"></div> -->
+                <!-- WORK EXPERIENCE End -->
 
-              <div class="col-md-12">
-                    <button mat-raised-button class="btn btn-info btn-block" style="border-radius: 100px;" (click)="openDialogworkEducation()">EDUCATION</button>
-              </div><br>
+                <!-- pojects start --> 
+                <mat-accordion>
+                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        <!-- about me -->
+                      </mat-panel-title>
+                      <mat-panel-description class="containbar">
+                        Pojects
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                        <mat-dialog-contan class="mat-typography">
+                          <div class="col-md-12">
+                              <div class="card">
+                                <div class="card-header card-header-info">
+                                    <h4 class="card-title">User Authentication</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text">It is built using NodeJS, ExpressJS, MongoDB, Mongoose JS, postgreSQL, sequelize, SMTP, JWT authentication.</p>
+                                    <mat-divider></mat-divider>
+                                      <p class="text">User Signup via Email || Phone || Social Signup with google+ , fackbook, truecallar ( OTP )</p>
+                                      <p class="text">User Login</p>
+                                      <p class="text">Forgot Password via Email || Phone</p>
+                                      <p class="text">Reset Password</p>
+                                      <p class="text">Change Password</p>
+                                </div>
+                              </div>
+                          </div>
+                    
+                          <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header card-header-info">
+                                    <h4 class="card-title">NodeJS Rest-api & Restful api Structure</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text">One of the most popular types of API is REST or, as they're sometimes known, RESTful APIs. REST or RESTful APIs were designed to take advantage of existing protocols. While REST - or Representational State Transfer - can be used over nearly any protocol, when used for web APIs it typically takes advantage of HTTP.</p>
+                                    <mat-divider></mat-divider>
+                                    <p class="text"> Nodejs & Nestjs</p> 
+                                    <p class="text"> ExpressJS framework</p>
+                                    <p class="text"> MongoDB as Database, Connection via MongooseJS</p>
+                                    <p class="text"> PostgreSQL as Database Connection via sequelize ORM</p>
+                                    <p class="text"> Encryption and decryption of the data and the data is shared between the receiver and sender of encrypted data. The public key is used to encrypt data and to decrypt the data, the private key is used and is shared.</p>
+                                    <p class="text"> Code Compiling with Babel </p>
+                                    <p class="text"> Custom Middleware for Authentication JWT IO & Role Based Authorization </p>
+                                    <p class="text"> Request Validator Custom Middleware joi</p>  
+                                    <p class="text"> SMTP Service for OTP Send & Verify</p>
+                                    <p class="text"> File Upload aws s3 System via Multer Configuration </p>
+                                    <p class="text"> Code Formatting with Prettie <p>
+                                </div>
+                              </div>
+                          </div>
+                    
+                          <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header card-header-info">
+                                    <h4 class="card-title">Nodejs || Nestjs || Aws || Postgresql + MongoDB || serverless + awsLambda + apiGatway + MongoDB atlas</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text">It is built using Nodejs, Nestjs, ExpressJs, MongoDB, PostgreSQL, Sequelize, SMTP, JWT authentication.</p>
+                                    <mat-divider></mat-divider>
+                                      <p class="text"> I have done in Nestjs framework User Signup via Email || Phone || Social Signup with google+ , fackbook, truecallar ( OTP )</p>
+                                      <p class="text"> User Login, Forgot Password via Email || Phone, Reset Password & Change Password</p>
+                                      <p class="text"> I have done demo backend application Nodejs + serverless + awsLambda + gitHub CI/CD </p>
+                                      <p class="text"> I have done demo backend application Nodejs and Nestjs with MongoDB & PostgreSQL Database</p>
+                                      <p class="text"> Done CRUD application in Nestjs with Sqlite-Swagger </p>
+                                      <p class="text"> I have done CRUD application in Nodejs with MySQL Database </p>
+                                </div>
+                              </div>
+                          </div>
+                        </mat-dialog-contan>
+                  </mat-expansion-panel>
+                </mat-accordion>
+                <!-- <div class="card-footer"></div> -->
+                <!-- pojects End -->
 
-              <div class="col-md-12">
-                    <button mat-raised-button class="btn btn-info btn-block" style="border-radius: 100px;" (click)="openDialogworkTechnicalSkills()">TECHNICAL SKILLS</button>
-              </div><br>
+                <!-- education start --> 
+                <mat-accordion>
+                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        <!-- about me -->
+                      </mat-panel-title>
+                      <mat-panel-description class="containbar">
+                        Education
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                        <mat-dialog-content class="mat-typography">
+                          <div class="col-md-12">
+                            <div class="card">
+                              <div class="card-header card-header-info">
+                                  <h4 class="card-title">Bachelor's Degree</h4>
+                              </div>
+                              <div class="card-body">
+                                  <p class="text">I have done bachelor's degree in Computer Engineering From Gujarat Technological University at Om Engineering College.</p>
+                                  <mat-divider></mat-divider>
+                                        <div class="card-footer"></div>
+                  
+                                  <div class="col-lg-12 col-md-6 col-sm-6">
+                                    <div class="card card-stats">
+                                        <div class="card-header card-header-info card-header-icon">
+                                            <div class="card-icon">
+                                              <div mat-card-avatar class="header-calender-image"></div>
+                                            </div>
+                                              <P class="card-category textLft">06/2013 - 06/2017</P>
+                                              <!-- <div class="col-md-6">
+                                                  <button mat-raised-button class="btn btn-denger btn-block">10/2019 - 10/2020</button>
+                                              </div> -->
+                                        </div>
+                                        <div class="card-footer"></div>
+                                    </div>
+                                  </div>
+                  
+                                  <div class="col-lg-12 col-md-6 col-sm-6">
+                                    <div class="card card-stats">
+                                        <div class="card-header card-header-info card-header-icon">
+                                            <div class="card-icon">
+                                              <div mat-card-avatar class="cgpa-image"></div>
+                                            </div>
+                                              <P class="card-category textLft">7.35 CGPA</P>
+                                        </div>
+                                        <div class="card-footer"></div>
+                                    </div>
+                                  </div>
+                  
+                              </div>
+                            </div>
+                        </div>
+                        </mat-dialog-content>   
+                  </mat-expansion-panel>
+                </mat-accordion>
+                <!-- <div class="card-footer"></div> -->
+                <!-- education End -->
 
-              <div class="col-md-12">
-                    <button mat-raised-button class="btn btn-info btn-block" style="border-radius: 100px;" >OTHERS</button>
-              </div> <br>
+                <!-- Technical skills start --> 
+                <mat-accordion>
+                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        <!-- about me -->
+                      </mat-panel-title>
+                      <mat-panel-description class="containbar">
+                        Technical skills
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                      <mat-dialog-content class="mat-typography">
+                        <div class="col-md-12">
+                          <div class="card">
+                              <div class="card-header card-header-info">
+                                  <h4 class="card-title">JavaScript Frameworks</h4>
+                              </div><br>
+                              <div class="card-body">
+                                    <p class="text">NodeJs</p>
+                                    <p class="text">NestJs</p>
+                                    <p class="text">ExpressJS</p>
+                                    <p class="text">Angular</p>
+                              </div>
+                            </div>
+                        </div>
+                  
+                        <div class="col-md-12">
+                          <div class="card">
+                              <div class="card-header card-header-info">
+                                  <h4 class="card-title">Web Design</h4>
+                              </div><br>
+                              <div class="card-body">
+                                  <p class="text">HTML</p>
+                                  <p class="text">SCSS</p>
+                                  <p class="text">Material-UI</p>
+                              </div>
+                            </div>
+                        </div>
+                  
+                        <div class="col-md-12">
+                          <div class="card">
+                              <div class="card-header card-header-info">
+                                  <h4 class="card-title">Database</h4>
+                              </div><br>
+                              <div class="card-body">
+                                    <p class="text">MongoDB</p>
+                                    <p class="text">PostgreSQL</p>
+                                    <p class="text">ODM : MongooseJS</p>
+                                    <p class="text">ORM : Squelize</p>
+                              </div>
+                            </div>
+                        </div>
+                  
+                        <div class="col-md-12">
+                          <div class="card">
+                              <div class="card-header card-header-info">
+                                  <h4 class="card-title">Others</h4>
+                              </div><br>
+                              <div class="card-body">
+                                    <p class="text">Package Manager : npm</p>
+                                    <p class="text">Project Management : Github, Tara, Git, Bitbucket</p>
+                                    <p class="text">Services : Serverless + awsLambda + apiGatway + Auth0</p>
+                                    <p class="text">Tools : Postman + Swagger UI + VSCode</p>
+                                    <p class="text">Oprating System : Ubuntu + Windows</p>
+                              </div>
+                            </div>
+                        </div>
+                      </mat-dialog-content>  
+                  </mat-expansion-panel>
+                </mat-accordion>
+                <!-- <div class="card-footer"></div> -->
+                <!-- Technical skills End -->
+
+                <!-- Others start --> 
+                <mat-accordion>
+                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        <!-- about me -->
+                      </mat-panel-title>
+                      <mat-panel-description class="containbar">
+                        Others
+                      </mat-panel-description>
+                    </mat-expansion-panel-header>
+                        <p>Coming soon</p>
+                  </mat-expansion-panel>
+                </mat-accordion>
+                <div class="card-footer"></div>
+                <!-- others End -->
           </div>
       </div>
     </mat-card>
 </div>
+
+<!-- <mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        about me
+      </mat-panel-title>
+      <mat-panel-description>
+        About Me {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+      
+    <p>I'm visible because I am open</p>
+  </mat-expansion-panel>
+</mat-accordion> -->
+

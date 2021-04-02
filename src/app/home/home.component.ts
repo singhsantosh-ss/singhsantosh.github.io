@@ -1,12 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog , MatDialogConfig} from '@angular/material/dialog';
-import { AboutMeComponent } from '../about-me/about-me.component';
-import { ConnectViaComponent } from '../connect-via/connect-via.component';
-import { EducationComponent } from '../education/education.component';
-import { ProjectsComponent } from '../projects/projects.component';
-import { TechnicalSkillsComponent } from '../technical-skills/technical-skills.component';
-import { WorkExperienceComponent } from '../work-experience/work-experience.component';
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -20,34 +13,45 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openDialogAboutMe() {
-    this.dialog.closeAll();
-    this.dialog.open(AboutMeComponent);
+  panelOpenState = false;
+
+
+  onNavigateUpwork(){
+    window.open("https://www.upwork.com/freelancers/~014b21313f1f1b504f", "_blank");
   }
 
-  openDialogConnectVia() {
-    this.dialog.closeAll();
-    this.dialog.open(ConnectViaComponent);
+  onNavigateGmail(){
+    window.open("mailto:singhsantosh.edu.in@gmail.com", "_blank");
   }
 
-  openDialogworkExperience() {
-    this.dialog.closeAll();
-    this.dialog.open(WorkExperienceComponent);
+  onNavigateGitHub(){
+    window.open("https://github.com/singhsantosh-ss", "_blank");
   }
 
-  openDialogworkProjects() {
-    this.dialog.closeAll();
-    this.dialog.open(ProjectsComponent);
+  onNavigateLinkedIn(){
+    window.open("https://www.linkedin.com/in/santosh-singh-714b50124/", "_blank");
   }
 
-  openDialogworkEducation() {
-    this.dialog.closeAll();
-    this.dialog.open(EducationComponent);
+  onNavigateTwitter(){
+    window.open("https://twitter.com/ssinghsantosh", "_blank");
   }
 
-  openDialogworkTechnicalSkills() {
-    this.dialog.closeAll();
-    this.dialog.open(TechnicalSkillsComponent);
+  onNavigateSkype(){
+    window.open("skype:singhsantosh.edu.in?chat", "_blank");
+  }
+
+  step = 0;
+
+  setStep(index: number) {
+    this.step = index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
   }
   
 }
