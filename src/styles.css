@@ -20,6 +20,9 @@
 /*     brand Colors              */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+.shape-roud {
+  border-radius: 100px;
+}
 .card {
   font-size: .875rem; }
 
@@ -15556,7 +15559,4 @@ p {
     background-size: cover;
     shape-image-threshold: initial;
     /* margin-left: 110px; */
-  }
-  .matCenter {
-      align-items: center;
   }
