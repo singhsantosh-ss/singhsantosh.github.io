@@ -71,7 +71,8 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+ }
 
 abbr[title],
 abbr[data-original-title] {
@@ -15498,30 +15499,30 @@ p {
     background-size: cover;
     shape-image-threshold: initial;
   }
-  .header-connect-image{
-      background-image: url('./assets/images/connect.png');
-      background-size: cover;
-      shape-image-threshold: initial;
-  }
-  .header-experince-image {
+  
+  .work-experince{
       background-image: url('./assets/images/work-experince.jpeg');
       background-size: cover;
       shape-image-threshold: initial;
+      margin-right: 10px;
   }
-  .header-project-image {
+  .project{
       background-image: url('./assets/images/PROJECTS.png');
       background-size: cover;
       shape-image-threshold: initial;
+      margin-right: 10px;
   }
-  .header-education-image {
+  .education {
       background-image: url('./assets/images/education-icon.jpg');
       background-size: cover;
       shape-image-threshold: initial;
+      margin-right: 10px;
   }
-  .header-technical-image {
+  .technical-skills{
       background-image: url('./assets/images/Technical.png');
       background-size: cover;
       shape-image-threshold: initial;
+      margin-right: 10px;
   }
   .header-connect-image-on-profile{
       background-image: url('./assets/images/connect.png');
@@ -15559,4 +15560,45 @@ p {
     background-size: cover;
     shape-image-threshold: initial;
     /* margin-left: 110px; */
+  }
+
+  .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+
+  .text {
+    text-align: left;
+  }
+
+  .containbar {
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+
+  .selected { 
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #00bfff;
+  }
+
+  .about-me{
+    background-image: url('./assets/images/santoshsingh.jpeg');
+    background-size: cover;
+    shape-image-threshold: initial;
+    margin-right: 10px;
+  }
+                          
+  .connect-via{
+      background-image: url('./assets/images/connect.png');
+      background-size: cover;
+      shape-image-threshold: initial;
+      margin-right: 10px;
+  }
+  
+  .others {
+      background-image: url('./assets/images/others.webp');
+      background-size: cover;
+      shape-image-threshold: initial;
+      margin-right: 10px;
   }
