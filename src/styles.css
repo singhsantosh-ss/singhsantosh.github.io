@@ -15513,7 +15513,7 @@ p {
       margin-right: 10px;
   }
   .education {
-      background-image: url('./assets/images/education-icon.jpg');
+      background-image: url('./assets/images/Education.png');
       background-size: cover;
       shape-image-threshold: initial;
       margin-right: 10px;
@@ -15523,12 +15523,6 @@ p {
       background-size: cover;
       shape-image-threshold: initial;
       margin-right: 10px;
-  }
-  .header-connect-image-on-profile{
-      background-image: url('./assets/images/connect.png');
-      background-size: cover;
-      shape-image-threshold: initial;
-      margin-left: 80px;
   }
   .header-calender-image {
       background-image: url('./assets/images/calender.jpg');
@@ -15590,7 +15584,7 @@ p {
   }
                           
   .connect-via{
-      background-image: url('./assets/images/connect.png');
+      background-image: url('./assets/images/ConnectVia.webp');
       background-size: cover;
       shape-image-threshold: initial;
       margin-right: 10px;
@@ -15609,5 +15603,14 @@ p {
     margin-left: 15px;
   }
   .footerColor{
-    background-color: #ccccb3;  
+    background-color: #EFF8FB;  
+  }
+
+  .textAboutMe {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .textBold {
+    font-weight: bold;
   }
