@@ -15604,9 +15604,9 @@ p {
   }
 
   .connectIcon {
-    height:48px !important;
-    width:48px !important;
-    margin-left: 12px;
+    height:40px !important;
+    width:40px !important;
+    margin-left: 15px;
   }
   .footerColor{
     background-color: #ccccb3;  
