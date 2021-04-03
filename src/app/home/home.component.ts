@@ -13,9 +13,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  panelOpenState = false;
-
-
   onNavigateUpwork(){
     window.open("https://www.upwork.com/freelancers/~014b21313f1f1b504f", "_blank");
   }
@@ -41,15 +38,12 @@ export class HomeComponent implements OnInit {
   }
 
   step = 0;
-
   setStep(index: number) {
     this.step = index;
   }
-
   nextStep() {
     this.step++;
   }
-
   prevStep() {
     this.step--;
   }

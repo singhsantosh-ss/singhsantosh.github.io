@@ -13,7 +13,7 @@
 
                 <!-- About me start --> 
                 <mat-accordion>
-                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                  <mat-expansion-panel class="selected" [expanded]="step === 1" (opened)="setStep(1)">
                     <mat-expansion-panel-header>
                       <mat-panel-title>
                         <!-- about me -->
@@ -42,7 +42,7 @@
 
                 <!-- Connect Via start --> 
                 <mat-accordion>
-                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                  <mat-expansion-panel class="selected" [expanded]="step === 2" (opened)="setStep(2)">
                     <mat-expansion-panel-header>
                       <mat-panel-title>
                         <!-- about me -->
@@ -118,7 +118,7 @@
 
                 <!-- WORK EXPERIENCE start --> 
                 <mat-accordion>
-                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                  <mat-expansion-panel class="selected" [expanded]="step === 3" (opened)="setStep(3)">
                     <mat-expansion-panel-header>
                       <mat-panel-title>
                         <!-- about me -->
@@ -239,7 +239,7 @@
 
                 <!-- pojects start --> 
                 <mat-accordion>
-                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                  <mat-expansion-panel class="selected" [expanded]="step === 4" (opened)="setStep(4)">
                     <mat-expansion-panel-header>
                       <mat-panel-title>
                         <!-- about me -->
@@ -315,7 +315,7 @@
 
                 <!-- education start --> 
                 <mat-accordion>
-                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                  <mat-expansion-panel class="selected" [expanded]="step === 5" (opened)="setStep(5)">
                     <mat-expansion-panel-header>
                       <mat-panel-title>
                         <!-- about me -->
@@ -374,7 +374,7 @@
 
                 <!-- Technical skills start --> 
                 <mat-accordion>
-                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                  <mat-expansion-panel class="selected" [expanded]="step === 6" (opened)="setStep(6)">
                     <mat-expansion-panel-header>
                       <mat-panel-title>
                         <!-- about me -->
@@ -448,7 +448,7 @@
 
                 <!-- Others start --> 
                 <mat-accordion>
-                  <mat-expansion-panel class="selected" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                  <mat-expansion-panel class="selected" [expanded]="step === 7" (opened)="setStep(7)">
                     <mat-expansion-panel-header>
                       <mat-panel-title>
                         <!-- about me -->
