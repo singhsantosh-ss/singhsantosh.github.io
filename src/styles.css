@@ -15602,3 +15602,12 @@ p {
       shape-image-threshold: initial;
       margin-right: 10px;
   }
+
+  .connectIcon {
+    height:48px !important;
+    width:48px !important;
+    margin-left: 12px;
+  }
+  .footerColor{
+    background-color: #ccccb3;  
+  }
