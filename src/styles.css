@@ -15566,16 +15566,20 @@ p {
 
   .containbar {
     font-weight: bold;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 10px;
   }
 
   .selected { 
     border-style: solid;
-    border-width: 1px;
-    border-color:  #00bfff;
+    border-width: 2px;
+    border-color:  #EFF8FB;
   }
-
+  .selected-page {
+    border-style: solid;
+    border-width: 4px;
+    border-color:  #EFF8FB;
+  }
   .about-me{
     background-image: url('./assets/images/santoshsingh.jpeg');
     background-size: cover;
@@ -15596,7 +15600,18 @@ p {
       shape-image-threshold: initial;
       margin-right: 10px;
   }
-
+  .redis {
+    background-image: url('./assets/images/redis.svg');
+    background-size: cover;
+    shape-image-threshold: initial;
+    margin-left: 3px;
+  }
+  .soket-io {
+    background-image: url('./assets/images/soket-io.svg');
+    background-size: cover;
+    shape-image-threshold: initial;
+    margin-left: 3px;
+  }
   .connectIcon {
     height:40px !important;
     width:40px !important;
@@ -15613,4 +15628,7 @@ p {
 
   .textBold {
     font-weight: bold;
+  }
+  .merginLeft{
+    margin-left: 3px;
   }
