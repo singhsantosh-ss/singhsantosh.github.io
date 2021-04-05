@@ -15546,7 +15546,7 @@ p {
   .profileCard {
     width: 400px;
     margin: 0 auto;
-    background-color:  #ccccb3
+    /* background-color:  #ccccb3 */
   }
 
   .cgpa-image{
@@ -15572,13 +15572,13 @@ p {
 
   .selected { 
     border-style: solid;
-    border-width: 2px;
-    border-color:  #EFF8FB;
+    border-width: 1px;
+    border-color:  #00acc1;
   }
   .selected-page {
     border-style: solid;
-    border-width: 4px;
-    border-color:  #EFF8FB;
+    border-width: 2px;
+    border-color:  #00acc1;
   }
   .about-me{
     background-image: url('./assets/images/santoshsingh.jpeg');
@@ -15618,7 +15618,7 @@ p {
     margin-left: 15px;
   }
   .footerColor{
-    background-color: #EFF8FB;  
+    background-color: #FFFFFF;  
   }
 
   .textAboutMe {
