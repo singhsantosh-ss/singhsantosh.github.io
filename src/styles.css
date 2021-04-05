@@ -15613,14 +15613,13 @@ p {
     margin-left: 3px;
   }
   .connectIcon {
-    height:40px !important;
-    width:40px !important;
-    margin-left: 15px;
+    /* height:40px !important; */
+    /* width:40px !important; */
+    margin-left: 5px;
   }
   .footerColor{
-    background-color: #FFFFFF;  
+    background-color: #FFFFFF;
   }
-
   .textAboutMe {
     text-align: left;
     margin-left: 10px;
