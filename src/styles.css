@@ -15631,3 +15631,8 @@ p {
   .merginLeft{
     margin-left: 3px;
   }
+
+  .mr {
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
