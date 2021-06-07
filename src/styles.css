@@ -15550,6 +15550,13 @@ p {
     margin-top: 10px;
   }
 
+  .pointer-button{
+    cursor: pointer
+  }
+  .via-color {
+    background-color: #ccccb3;
+  }
+
   .cgpa-image{
     background-image: url('./assets/images/education-icon.jpg');
     background-size: cover;
