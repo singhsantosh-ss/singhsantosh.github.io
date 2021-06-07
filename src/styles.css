@@ -15546,7 +15546,8 @@ p {
   .profileCard {
     width: 400px;
     margin: 0 auto;
-    /* background-color:  #ccccb3 */
+    background-color:  #ccccb3;
+    margin-top: 10px;
   }
 
   .cgpa-image{
